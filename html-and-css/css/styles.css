@@ -1,17 +1,29 @@
 /* Global styles*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
 background-color: blue;
 
 }
+section img {
+    width: 80%;
+}
 
+#container {
+    margin: 10px;
+}
 img {
     display: block;
     width: 100%;
     margin: 0 auto;
 }
-
-nav, header {
+h1, h2, h3 {
+    text-align: center;
+}
+nav, header,footer {
     background-color: blanchedalmond;
 }
 /*phone styles*/
@@ -30,12 +42,89 @@ nav li {
 
 nav li a {
     display: block;
-    background-color: lightgreen;
-    margin: 9px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.257em;
+    background-color: rgb(0, 128, 255);
+    margin: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.185em;
+    font-weight: bold;
     text-decoration: none;
-    color: brown;
-    
+    color: rgb(195, 54, 202);
+    border-bottom: 4px solid blanchedalmond;
+
+}
+
+header {
+    padding: 17px;
+}
+
+section {
+    margin: 10px 0;
+}
+
+
+.col {
+    margin: 10px;
+}
+.col img {
+    width: 65%;
+}
+
+#lower_are {
+    background-color: lightskyblue;
+}
+
+.column {
+    margin: 10px;
+}
+.column img {
+    width: 45%;
+}
+footer {
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*tablet styles*/
+
+@media (min-width: 768px){
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        width: 150px;
+        border-radius: 10px;
+    }
+    #multi-col {
+        display: flex;
+    }
+    .col {
+        width: 95%;
+    }
+
+    .col_text {
+        margin-top: 60px;
+    }
+}
+/*desktop styles*/
+
+@media (min-width: 1024px) {
+    nav li a {
+        background-color: rgb(0, 128, 255);
+    }
+    nav li a:hover {
+        border-bottom: 4px solid orange;
+    }
+
+    #container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    lower_area {
+        display: flex;
+    }
 }
