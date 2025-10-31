@@ -1,0 +1,41 @@
+/* Global styles*/
+
+body {
+background-color: blue;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav, header {
+    background-color: blanchedalmond;
+}
+/*phone styles*/
+ 
+nav {
+    margin-bottom: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    background-color: lightgreen;
+    margin: 9px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.257em;
+    text-decoration: none;
+    color: brown;
+    
+}
